@@ -1,1 +1,20 @@
-<p>header works!</p>
+<header class=" sticky top-0">
+   <div class="container mx-auto bg-white flex justify-between items-start pt-10">
+    <div>
+        <img src="" alt="">
+        <h1>Ibrahima Soly Coulibaly</h1>
+    </div>  
+  <nav class="">
+    <div class="flex items-end lg:hidden cursor-pointer" (click)="toggleNav()">
+        <i class="ri-menu-line text-3xl"></i>
+    </div>
+    <ul [ngClass]="{'left-60': !isNavOpen, 'left-0': isNavOpen}" class="fixed w-full flex flex-col lg:relative left-60 lg:left-0
+    right-0 items-end gap-5 lg:items-start  lg:transition-none  lg:gap-10 lg:flex-row lg:p-0 pr-10 pt-5 lg:pt-0 lg:pr-0 transition-all duration-500">
+        <li><a class="text-xl" href="#">À propos</a></li>
+        <li><a class="text-xl" href="#">Compétences</a></li>
+        <li><a class="text-xl" href="">Projets</a></li>
+        <li><a class="text-xl" href="#">Contact</a></li>
+    </ul>
+  </nav> 
+   </div>
+</header>

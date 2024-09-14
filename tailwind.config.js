@@ -18,8 +18,8 @@ module.exports = {
       xl: '1200px',
     },
     fontFamily: {
-      primary: 'DM Serif Display',
-      secondary: 'Jost'
+      primary: 'Oswald',
+      secondary: 'Open Sans'
     },
     backgroundImage:{
       hero : 'url(assets/images/iphones-7479304_1280.jpg)',

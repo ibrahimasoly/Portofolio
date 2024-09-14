@@ -2,3 +2,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1{
+    @apply font-primary lg:text-4xl text-2xl
+}
+a,p{
+    @apply font-secondary
+}
+.bn{
+    @apply bg-primary rounded-full p-3 border-2
+    border-black font-primary
+    shadow-xl active:shadow-gray-500
+}
+.bn_cv{
+    @apply hover:bg-text-primary hover:text-white rounded-full p-3 border-2 border-black font-primary
+     shadow-xl active:shadow-gray-500
+}
+.bn_icon{
+    @apply text-3xl
+}
