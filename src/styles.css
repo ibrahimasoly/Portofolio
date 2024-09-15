@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 h1{
-    @apply font-primary lg:text-4xl text-2xl
+    @apply  lg:text-4xl text-2xl
 }
 a,p{
     @apply font-secondary
@@ -20,4 +20,10 @@ a,p{
 }
 .bn_icon{
     @apply text-3xl
+}
+h1, h2, h3{
+    @apply font-primary font-bold
+}
+h2{
+    @apply text-xl
 }
