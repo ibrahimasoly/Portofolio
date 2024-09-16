@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [
+  
+  ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
