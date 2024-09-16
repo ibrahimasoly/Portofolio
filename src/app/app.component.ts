@@ -6,6 +6,7 @@ import { PresentationComponent } from "./components/presentation/presentation.co
 import { AproposComponent } from "./components/apropos/apropos.component";
 import { CompetenceComponent } from "./components/competence/competence.component";
 import { ProjetComponent } from "./components/projet/projet.component";
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @Component({
@@ -15,7 +16,7 @@ import { ProjetComponent } from "./components/projet/projet.component";
     RouterOutlet, HeaderComponent,
     FooterComponent, PresentationComponent,
     AproposComponent, CompetenceComponent,
-    ProjetComponent, RouterLink
+    ProjetComponent, RouterLink,ContactComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
