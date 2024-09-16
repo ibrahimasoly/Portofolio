@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent implements OnInit {
-  v="boulby@gmail.com"
+  v="boulby9023@gmail.com"
   ngOnInit(): void {
     this.v
   }
