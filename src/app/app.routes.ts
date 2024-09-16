@@ -4,12 +4,13 @@ import { AppComponent } from './app.component';
 import { AcceuilComponent } from './components/acceuil/acceuil.component';
 import { ProjetComponent } from './components/projet/projet.component';
 import { CompetenceComponent } from './components/competence/competence.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
     {path:'propo', component:AproposComponent},
     {path:'competence', component:CompetenceComponent},
     {path:'projets', component:ProjetComponent},
-    {path:'contact', component:AproposComponent},
+    {path:'contact', component:ContactComponent},
     {path:'home', component:AcceuilComponent},
     {path:'',pathMatch:'full', redirectTo:'home'}
     
