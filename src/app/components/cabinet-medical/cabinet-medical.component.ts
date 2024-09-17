@@ -15,33 +15,53 @@ export class CabinetMedicalComponent implements OnInit {
   projects = [
     {
       id:1,
-      explication: 'Description du projet 1',
-      image: 'assets/images/cabinet/img1.png',
+      explication: 'page de connexion en tant que medecin',
+      image: 'assets/images/cabinet/img2.png',
     },
     {
       id:2,
-      explication: 'Description du projet 1',
+      explication: 'Liste des patients',
       image: 'assets/images/cabinet/img1.png',
     },
     {
       id:3,
-      explication: 'Description du projet 1',
-      image: 'assets/images/cabinet/img1.png',
+      explication: 'Les patient qui ont des RDVs',
+      image: 'assets/images/cabinet/img3.png',
     },
     {
       id:4,
-      explication: 'Description du projet 1',
-      image: 'assets/images/cabinet/img1.png',
+      explication: 'Les patients qui ont été consulter',
+      image: 'assets/images/cabinet/img4.png',
     },
     {
       id:5,
-      explication: 'Description du projet 1',
-      image: 'assets/images/cabinet/img1.png',
+      explication: 'les informations sur le patient consulter',
+      image: 'assets/images/cabinet/img5.png',
     },
     {
       id:6,
-      explication: 'Description du projet 1',
-      image: 'assets/images/cabinet/img1.png',
+      explication: "Creation d'ordonnance pour le patient consulter" ,
+      image: 'assets/images/cabinet/img6.png',
+    },
+    {
+      id:7,
+      explication: "Ajouter un patient" ,
+      image: 'assets/images/cabinet/img7.png',
+    },
+    {
+      id:8,
+      explication: "Ajouter un RDV" ,
+      image: 'assets/images/cabinet/img8.png',
+    },
+    {
+      id:9,
+      explication: "Ajouter une consultation" ,
+      image: 'assets/images/cabinet/img9.png',
+    },
+    {
+      id:10,
+      explication: "Dossier medical" ,
+      image: 'assets/images/cabinet/img10.png',
     },
   ];
   ngOnInit(): void {
