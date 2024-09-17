@@ -24,7 +24,7 @@
     </div>
    @if (isModalOpen) {
     <div  class=" fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" (click)="closeModal()">
-      <div class="m-10 lg:m-80 md:m-14" (click)="$event.stopPropagation()">
+      <div class="m-10 lg:m-80 md:m-20" (click)="$event.stopPropagation()">
         <img [src]="modalImage" alt="Image en pleine taille" class=" w-auto  h-auto">
       </div>
   </div>
