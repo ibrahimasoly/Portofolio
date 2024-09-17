@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Swiper from 'swiper'
 
 @Component({
   selector: 'app-cabinet-medical',
@@ -7,9 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './cabinet-medical.component.html',
   styleUrl: './cabinet-medical.component.css'
 })
-export class CabinetMedicalComponent {
+export class CabinetMedicalComponent implements OnInit {
   isModalOpen=false;
   modalImage:string=''
+  currentIndex = 0;
   projects = [
     {
       id:1,
@@ -42,6 +44,35 @@ export class CabinetMedicalComponent {
       image: 'assets/images/cabinet/img1.png',
     },
   ];
+  ngOnInit(): void {
+    new Swiper('.swiper', {
+      loop: true,
+      slidesPerView:3,
+      spaceBetween:20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      
+      breakpoints:{
+        320: {
+          slidesPerView:1,
+        },
+        960:{
+          slidesPerView:2,
+        },
+        1200:{
+          slidesPerView:3,
+        },
+      }
+    }
+    );
+  }
+
 
   openModal(url:string){
     this.isModalOpen=true
@@ -53,7 +84,16 @@ export class CabinetMedicalComponent {
     this.modalImage=''
   }
 
+  prevImage() {
+    this.currentIndex = (this.currentIndex === 0) ? this.projects.length - 1 : this.currentIndex - 1;
+  }
 
+  // Fonction pour aller à l'image suivante
+  nextImage() {
+    this.currentIndex = (this.currentIndex === this.projects.length - 1) ? 0 : this.currentIndex + 1;
+  }
+
+  
 
 
 }

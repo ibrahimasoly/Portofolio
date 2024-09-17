@@ -8,10 +8,10 @@
   <ul [ngClass]="{'left-60': !isNavOpen, 'left-0': isNavOpen}" class="fixed w-full flex flex-col lg:relative left-60 lg:left-0
   right-0 items-end gap-5 lg:items-start  lg:transition-none  lg:gap-10 lg:flex-row lg:p-0 pr-10 pt-5 lg:pt-0 lg:pr-0 transition-all duration-500">
       <li><a class="text-xl" routerLink="/home" routerLinkActive="active"(click)="toggleNav()" >Acceuil</a></li>
-      <li><a class="text-xl" routerLink="/acceuil/propo" routerLinkActive="active"(click)="toggleNav()" >À propos</a></li>
-      <li><a class="text-xl" routerLink="/acceuil/competence" routerLinkActive="active" (click)="toggleNav()" >Compétences</a></li>
-      <li><a class="text-xl" routerLink="/acceuil/projets" routerLinkActive="active" (click)="toggleNav()" >Projets</a></li>
-      <li><a class="text-xl" routerLink="/acceuil/contact" routerLinkActive="active" (click)="toggleNav()" >Contact</a></li>
+      <li><a class="text-xl" href="#apropos" (click)="toggleNav()" >À propos</a></li>
+      <li><a class="text-xl" href="#compétences" (click)="toggleNav()" >Compétences</a></li>
+      <li><a class="text-xl" href="#project" (click)="toggleNav()" >Projets</a></li>
+      <li><a class="text-xl" href="#Contact" (click)="toggleNav()" >Contact</a></li>
   </ul>
   </nav> 
 </div>
