@@ -7,17 +7,17 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-5 m-16 gap-5">
       @for (project of projects; track project.id) {
         <div  class="flex flex-col w-full border-2 shadow-xl hover:-translate-y-1 duration-300 rounded-lg">
-            <div>
-              <a (click)="openModal(project.image)">
-                <img class="h-[200px] w-full hover:brightness-50 hover:duration-500" [src]="project.image" alt="image projet">
-              </a>
-            </div>
+            <a (click)="openModal(project.image)" class="cursor-pointer">
+              <img class="h-[200px] w-full hover:brightness-50 hover:duration-500" [src]="project.image" alt="image projet">
+            </a>
             <div class="p-2">
               <h2>{{ project.name }}</h2>
               <p class="text-text-secondary">{{ project.description }}</p>
             </div>
             <div class="w-[250px]">
-              <button  class="m-2 flex items-start font-secondary border-2 border-blue-600 w-auto p-2 rounded-full hover:border-black hover:bg-text-primary hover:text-white">
+              <button  class="m-2 flex items-start font-secondary border-2
+               border-blue-600 w-auto p-2 rounded-full hover:border-black
+                hover:bg-text-primary hover:text-white" (click)="openProjet(project.lien)">
                 Voir le projet
               </button>
             </div>

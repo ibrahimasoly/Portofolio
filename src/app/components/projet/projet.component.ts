@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { routes } from '../../app.routes';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projet',
@@ -7,7 +9,10 @@ import { Component } from '@angular/core';
   templateUrl: './projet.component.html',
   styleUrls: ['./projet.component.css']
 })
-export class ProjetComponent {
+export class ProjetComponent{
+
+
+  constructor(private route:Router){}
 
   isModalOpen = false;
   modalImage: string = '';
@@ -15,21 +20,24 @@ export class ProjetComponent {
   projects = [
     {
       id:1,
-      name: 'Projet 1',
+      name: 'Cabinet Medical',
       description: 'Description du projet 1',
-      image: 'assets/images/cabinet/img1.png'
+      image: 'assets/images/cabinet/img1.png',
+      lien:'cabinet'
     },
     {
       id:2,
       name: 'Projet 2',
       description: 'Description du projet 2',
-      image: 'assets/images/cabinet/img1.png'
+      image: 'assets/images/cabinet/img1.png',
+      lien:'myImmobilier'
     },
     {
       id:3,
       name: 'Projet 3',
       description: 'Description du projet 3',
-      image: 'assets/images/cabinet/img1.png'
+      image: 'assets/images/cabinet/img1.png',
+      lien:'cabinet'
     }
   ];
 
@@ -41,5 +49,10 @@ export class ProjetComponent {
   closeModal(): void {
     this.isModalOpen = false;
     this.modalImage = '';
+  }
+
+  openProjet(url:string):void{
+    this.route.navigateByUrl(url)
+    console.log(url)
   }
 }
