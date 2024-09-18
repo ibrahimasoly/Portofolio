@@ -1,14 +1,14 @@
 <div class="container mx-auto  w-full mt-24">
     <div class="flex flex-col items-center">
         <h1>Cabinet Medicale</h1>
-        <span class="flex text-justify">MétéoNow est une application web légère et réactive, née de la volonté de créer un outil simple mais puissant pour accéder aux informations météorologiques en temps réel. Son objectif est d'offrir aux utilisateurs une interface élégante et facile à utiliser pour consulter rapidement les conditions météorologiques actuelles et les prévisions, tout en démontrant l'intégration efficace d'API tierces.</span>
+        <span class="flex text-justify mt-2 lg:text-lg">En pratique, le médecin généraliste ou spécialiste fait face, de manière récurrente, à des défis liés à la collecte, la récupération, le traitement et la communication des informations. L'application Cabinet-Médical a pour objectif de résoudre ces problématiques en proposant un système d'information dédié aux professionnels de santé, qu'ils soient généralistes ou spécialistes. Ce système permet de simplifier et d'enrichir les activités quotidiennes des acteurs travaillant dans un cabinet médical, en facilitant l'accès aux dossiers des patients, la gestion des rendez-vous, le suivi des consultations, ainsi que la communication entre les différents intervenants médicaux. Il contribue ainsi à une meilleure organisation et à une prise en charge plus efficace des patients.</span>
     </div>
     <div class="relative z-0">
       <div class="swiper">
         <div class="swiper-wrapper">
           @for (project of projects; track project.id) {
             <div class="swiper-slide">
-              <div class="rounded-xl border-2 m-5 shadow-lg hover:-translate-y-1 duration-300" [style.transform]="'translateX(-' + currentIndex*118  + '%)'">
+              <div class="rounded-xl border-2 m-5 shadow-lg hover:-translate-y-10 duration-300" [style.transform]="'translateX(-' + currentIndex*118  + '%)'">
                 <div class=" w-full">
                   <a  class="" (click)="openModal(project.image)">
                     <img class="object-fill hover:brightness-50" [src]="project.image" alt="">
@@ -33,5 +33,28 @@
       </div>
   </div>
   }
+  <div class="mt-10">
+    <h2 class="flex items-start text-2xl">Technologies utilisées</h2>
+    <ul class="list-disc ml-7 flex flex-col gap-2">
+      @for (langage of langages; track langage.id) {
+        <li><span class="lg:text-xl text-lg "> {{langage.technologies}} </span></li>
+      }
+    </ul>
+  </div>
+  <div class="mt-10">
+    <h2 class="flex items-start text-2xl">Fonctionnalités principales</h2>
+    <ul class="list-disc ml-7 flex flex-col gap-2">
+      @for (fonction of fonctions; track fonction.id) {
+        <li>
+          <p class="font-primary text-lg font-bold">
+            {{fonction.title}}:
+             <span class="text-lg font-normal">
+              {{fonction.technologies}}
+             </span>
+          </p>
+        </li>
+      }
+    </ul>
+  </div>
   <div class="h-[3000px]"></div>
 </div>

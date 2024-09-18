@@ -6,7 +6,7 @@
 h1{
     @apply  lg:text-4xl text-2xl
 }
-a,p{
+a,p,span{
     @apply font-secondary
 }
 .bn{
@@ -26,4 +26,7 @@ h1, h2, h3{
 }
 h2{
     @apply text-xl
+}
+h3{
+    @apply text-lg
 }

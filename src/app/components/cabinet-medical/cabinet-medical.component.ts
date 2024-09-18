@@ -65,6 +65,48 @@ export class CabinetMedicalComponent implements OnInit {
       image: 'assets/images/cabinet/img10.png',
     },
   ];
+
+  langages=[
+    {
+      id:1,
+      technologies:"Frontend : Angular(HTML5, SCSS, TypeScript), Bootstrap."
+    },
+    {
+      id:2,
+      technologies:"Backend : Spring Boot (Java)."
+    },
+    {
+      id:3,
+      technologies:"Base de données : Mysql."
+    },
+    {
+      id:4,
+      technologies:"Contrôle de version : Git."
+    },
+  ];
+  fonctions=[
+    {
+      id:1,
+      title:"Gestion des utilisateurs",
+      technologies:"Frontend : Angular(HTML5, SCSS, TypeScript), Bootstrap."
+    },
+    {
+      id:2,
+      title:"",
+      technologies:"Backend : Spring Boot (Java)."
+    },
+    {
+      id:3,
+      title:"",
+      technologies:"Base de données : Mysql."
+    },
+    {
+      id:4,
+      title:"",
+      technologies:"Contrôle de version : Git."
+    },
+  ];
+
   ngOnInit(): void {
     new Swiper('.swiper', {
       loop: true,
