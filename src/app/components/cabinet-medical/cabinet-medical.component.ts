@@ -125,6 +125,9 @@ export class CabinetMedicalComponent implements OnInit {
         320: {
           slidesPerView:1,
         },
+        667: {
+          slidesPerView:2,
+        },
         768: {
           slidesPerView:2,
         },
