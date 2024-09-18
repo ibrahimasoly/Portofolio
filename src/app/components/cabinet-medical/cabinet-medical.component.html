@@ -1,4 +1,4 @@
-<div class="container mx-auto  w-full mt-24">
+<div class="container mx-auto  w-full my-24">
     <div class="flex flex-col items-center">
         <h1>Cabinet Medicale</h1>
         <span class="flex text-justify mt-2 lg:text-lg">En pratique, le médecin généraliste ou spécialiste fait face, de manière récurrente, à des défis liés à la collecte, la récupération, le traitement et la communication des informations. L'application Cabinet-Médical a pour objectif de résoudre ces problématiques en proposant un système d'information dédié aux professionnels de santé, qu'ils soient généralistes ou spécialistes. Ce système permet de simplifier et d'enrichir les activités quotidiennes des acteurs travaillant dans un cabinet médical, en facilitant l'accès aux dossiers des patients, la gestion des rendez-vous, le suivi des consultations, ainsi que la communication entre les différents intervenants médicaux. Il contribue ainsi à une meilleure organisation et à une prise en charge plus efficace des patients.</span>
@@ -28,7 +28,7 @@
     </div>
    @if (isModalOpen) {
     <div  class=" fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" (click)="closeModal()">
-      <div class="m-10 lg:m-80 md:m-20" (click)="$event.stopPropagation()">
+      <div class="m-10 lg:m-60  md:m-20" (click)="$event.stopPropagation()">
         <img [src]="modalImage" alt="Image en pleine taille" class=" w-auto  h-auto">
       </div>
   </div>
@@ -56,5 +56,17 @@
       }
     </ul>
   </div>
- 
+  <div class="flex flex-row gap-2 mt-10">
+    <button class="border-2 border-black rounded-full max-w-56 p-4 font-secondary">Voir sur GitHub</button>
+    <button class="border-2 border-black rounded-full max-w-56 p-4 font-secondary">Démo</button>
+  </div>
+  <div class="mt-10 w-full border-2 rounded-lg shadow-sm ">
+    <div class="absolute  w-2 h-[195px] lg:h-[129px] sm:h-[125px] rounded-l-lg bg-red-600"></div>
+    <h1 class="text-red-600 ml-5 m-2">Note:</h1>
+    <ul class="list-disc ml-10 gap-2 p-2">
+      <li>Une présentation vidéo sera disponible prochainement en cliquant sur ce bouton. <a href="#" class=" hover:text-blue-800 text-center"><i class="ri-markdown-fill text-2xl"></i></a></li>
+      <li>Le projet sera prochainement publié sur GitHub avec une démo.</li>
+    </ul>
+  </div>
+  <!-- <div class="h-[3000px]"></div> -->
 </div>
