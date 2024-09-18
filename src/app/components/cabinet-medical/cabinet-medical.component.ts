@@ -1,10 +1,11 @@
+import { NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper'
 
 @Component({
   selector: 'app-cabinet-medical',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './cabinet-medical.component.html',
   styleUrl: './cabinet-medical.component.css'
 })
@@ -109,11 +110,13 @@ export class CabinetMedicalComponent implements OnInit {
 
   prevImage() {
     this.currentIndex = (this.currentIndex === 0) ? this.projects.length - 1 : this.currentIndex - 1;
+    console.log(this.currentIndex)
   }
-
+  
   // Fonction pour aller à l'image suivante
   nextImage() {
     this.currentIndex = (this.currentIndex === this.projects.length - 1) ? 0 : this.currentIndex + 1;
+    console.log(this.currentIndex)
   }
 
   
