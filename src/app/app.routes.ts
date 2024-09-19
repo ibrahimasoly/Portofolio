@@ -7,6 +7,7 @@ import { CompetenceComponent } from './components/competence/competence.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { CabinetMedicalComponent } from './components/cabinet-medical/cabinet-medical.component';
 import { IbeComponent } from './components/ibe/ibe.component';
+import { BusTransportComponent } from './components/bus-transport/bus-transport.component';
 
 export const routes: Routes = [
     {path:'acceuil', component:AcceuilComponent, children:[
@@ -17,7 +18,7 @@ export const routes: Routes = [
     ]},
     {path:'home', component:IbeComponent},
     {path:'cabinet', component:CabinetMedicalComponent},
-    {path:'myImmobilier', component:CabinetMedicalComponent},
+    {path:'busTransport', component:BusTransportComponent},
     {path:'',pathMatch:'full', redirectTo:'home'}
     
 ];

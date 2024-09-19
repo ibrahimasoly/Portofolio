@@ -27,10 +27,10 @@ export class ProjetComponent{
     },
     {
       id:2,
-      name: 'Projet 2',
+      name: 'Bus Transport',
       description: 'Description du projet 2',
-      image: 'assets/images/cabinet/img1.png',
-      lien:'myImmobilier'
+      image: 'assets/images/bus/img1.png',
+      lien:'busTransport'
     },
     {
       id:3,
