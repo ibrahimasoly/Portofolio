@@ -90,28 +90,28 @@ export class MyLogementComponent {
   fonctions=[
     {
       id:1,
-      title:"Réservation en ligne des billets",
-      technologies:" Permet aux utilisateurs de réserver facilement des billets de bus directement depuis leur téléphone, sans avoir à se déplacer dans une agence."
+      title:"Inscription des fournisseurs",
+      technologies:" La plateforme permet aux fournisseurs de créer un compte pour accéder aux fonctionnalités."
     },
     {
       id:2,
-      title:"Tableau de bord interactif",
-      technologies:"Vue d’ensemble des réservations, incluant les trajets sélectionnés, les paiements effectués, et les billets validés."
+      title:"Gestion des logements",
+      technologies:"Les fournisseurs peuvent ajouter ou supprimer des biens immobiliers (logements) sur la plateforme."
     },
     {
       id:3,
-      title:"Authentification des billets",
-      technologies:"Les billets contiennent un QR code scanné à l’agence pour vérifier leur authenticité et leur validité en temps réel."
+      title:"Consultation des logements",
+      technologies:"Les utilisateurs peuvent rechercher et consulter les informations détaillées des logements disponibles."
     },
     {
       id:4,
-      title:"Optimisation du transport",
-      technologies:"Réduction des temps d’attente et des déplacements inutiles grâce à la réservation en ligne, simplifiant ainsi l’accès aux services de transport interrégionaux au Mali."
+      title:"Gestion des transactions",
+      technologies:"La plateforme offre la possibilité de gérer les transactions et les relations clients/fournisseurs."
     },
     {
       id:5,
-      title:"Sécurité et fiabilité ",
-      technologies:"Transactions sécurisées et informations fiables sur les trajets, garantissant une expérience utilisateur optimale."
+      title:"Tableau de bord pour l'administrateur ",
+      technologies:"L’administrateur de la plateforme dispose d’un tableau de bord pour gérer les comptes utilisateurs, les annonces et les statistiques sur les transactions."
     },
   ];
 

@@ -87,23 +87,38 @@ export class CabinetMedicalComponent implements OnInit {
   fonctions=[
     {
       id:1,
+      title:"Gestion des patients",
+      technologies:"Enregistrement des patients."
+    },
+    {
+      id:2,
       title:"Prise de rendez-vous",
       technologies:"Prise et gestion des rendez-vous des patients, soit directement au cabinet, soit par téléphone. Les informations de la prise de rendez-vous incluent le nom, prénom, et la date et heure souhaitée, avec un ajustement selon la disponibilité du médecin."
     },
     {
-      id:2,
+      id:3,
       title:"Gestion des consultations",
       technologies:"Ajout et gestion des consultations médicales via un formulaire interactif, comprenant l’enregistrement des nouveaux patients, la gestion des fiches médicales existantes, et la mise à jour des antécédents médicaux pour chaque consultation."
     },
     {
-      id:3,
-      title:"Gestion des antécédents",
-      technologies:"Mise à jour automatique des antécédents médicaux et chirurgicaux du patient pour une traçabilité optimale lors des consultations ultérieures."
+      id:4,
+      title:"Création d'ordonnances",
+      technologies:" Émission et gestion des prescriptions médicales."
     },
     {
-      id:4,
+      id:5,
       title:"Gestion de la comptabilité",
       technologies:"Ajout et gestion des recettes du cabinet, incluant les frais de consultation et les dépenses associées (achat de médicaments, factures, fournitures). Les pièces justificatives sont archivées pour garantir la transparence financière."
+    },
+    {
+      id:6,
+      title:"Tableau de bord pour la secrétaire",
+      technologies:"Vue d'ensemble des rendez-vous et du nombre de patients prévus pour la journée."
+    },
+    {
+      id:7,
+      title:"Tableau de bord pour le médecin",
+      technologies:"Vue d'ensemble des consultations de la journé, ordonnances et factures."
     },
   ];
 
