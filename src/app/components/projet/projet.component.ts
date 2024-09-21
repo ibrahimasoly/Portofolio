@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { routes } from '../../app.routes';
 import { Router } from '@angular/router';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-projet',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './projet.component.html',
   styleUrls: ['./projet.component.css']
 })
@@ -34,10 +35,10 @@ export class ProjetComponent{
     },
     {
       id:3,
-      name: 'Projet 3',
+      name: 'My Logement',
       description: 'Description du projet 3',
-      image: 'assets/images/cabinet/img1.png',
-      lien:'cabinet'
+      image: 'assets/images/logement/img1.png',
+      lien:'myLogoment'
     }
   ];
 

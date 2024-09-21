@@ -1,8 +1,9 @@
 <div class="container mx-auto  w-full my-24">
     <div class="flex flex-col items-center">
-        <h1>Bus Transport</h1>
+        <h1>My Logement</h1>
         <span class="flex text-justify mt-2 lg:text-lg">
-            Est une application qui améliore considérablement la réservation de billets de bus au Mali en évitant le besoin de se rendre physiquement en agence. Les utilisateurs peuvent réserver leurs billets et payer en ligne directement depuis leur téléphone, recevant un ticket numérique avec un QR code pour vérifier la validité à l’arrivée. Cela réduit les temps d'attente, simplifie les déplacements, et garantit des transactions sécurisées. En facilitant l'accès aux services de transport, cette solution optimise l'efficacité des voyages interrégionaux au Mali tout en assurant une sécurité maximale        </span>
+            La reconnaissance et la détection d'images immobilières sont des technologies d'intelligence artificielle en pleine expansion, utilisées dans le secteur immobilier pour extraire automatiquement des informations pertinentes à partir d'images, comme le type de bien ou le nombre de pièces. Cependant, ces tâches restent complexes, et l'efficacité des méthodes varie. Le choix du modèle dépend de la précision obtenue. Ce travail explore les technologies et méthodes adaptées pour analyser des images provenant de diverses sources (aériennes, satellitaires et images simples) et propose de concevoir une API intégrée dans une application web immobilière pour automatiser la vérification des informations. Cela réduirait les tâches manuelles des administrateurs
+        </span>
     </div>
     <div class="relative z-0">
       <div class="swiper">
@@ -29,8 +30,8 @@
     </div>
    @if (isModalOpen) {
     <div  class=" fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" (click)="closeModal()">
-      <div class="m-10 lg:m-auto  md:m-20" (click)="$event.stopPropagation()">
-        <img [src]="modalImage" alt="Image en pleine taille" class=" w-auto  h-auto lg:h-[700px] md:h-[800px]">
+      <div class="m-10 lg:m-60  md:m-20" (click)="$event.stopPropagation()">
+        <img [src]="modalImage" alt="Image en pleine taille" class=" w-auto  h-auto">
       </div>
   </div>
   }
