@@ -37,7 +37,7 @@ export class ProjetComponent{
     {
       id:3,
       name: 'My Logement',
-      description: "My Logement permet aux utilisateurs de consulter le site et de faire des demandes immobilières en tant que clients. Les fournisseurs peuvent également s'inscrire sur la plateforme pour y ajouter les informations concernant leurs logements. L'application intègre des API d'intelligence artificielle (IA) qui vérifient l'authenticité des images fournies par les fournisseurs et confirment la présence du bâtiment à l'adresse indiquée",
+      description: "My Logement permet aux utilisateurs de consulter le site et de faire des demandes immobilières en tant que clients. Les fournisseurs peuvent également s'inscrire sur la plateforme pour y ajouter les informations concernant leurs logements. L'application intègre des API d'intelligence artificielle (IA) qui vérifient l'authenticité des images fournies par les fournisseurs et confirment la présence du bâtiment à l'adresse indiquée.",
       image: 'assets/images/logement/img1.png',
       lien:'myLogoment'
     }
