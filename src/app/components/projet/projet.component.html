@@ -4,9 +4,9 @@
       <h1>Projets</h1>
     </div>
     <h3 class="">Les derniers récents projets</h3>
-    <div  class="grid grid-cols-1  md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 mt-5 m-6 lg:m-16  gap-5">
+    <div  class="grid grid-cols-1  md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 mt-5   gap-5">
       @for (project of projects; track project.id) {
-        <div  class="flex flex-col w-full border-2 shadow-xl hover:-translate-y-1 duration-300 rounded-lg">
+        <div  class="flex flex-col w-full border-2 shadow-xl hover:-translate-y-2 duration-300 rounded-lg">
             <a (click)="openModal(project.image)" class="cursor-pointer" [ngClass]="{'flex justify-center':project.id==2,}">
               <img [ngClass]="{'w-[95px]':project.id==2,}" class="h-[200px] w-full hover:brightness-50 hover:duration-500" [src]="project.image" alt="image projet">
             </a>
