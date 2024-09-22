@@ -4,15 +4,15 @@
       <h1>Projets</h1>
     </div>
     <h3 class="">Les derniers récents projets</h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-5 m-16 gap-5">
+    <div  class="grid grid-cols-1  md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 mt-5 m-6 lg:m-16  gap-5">
       @for (project of projects; track project.id) {
         <div  class="flex flex-col w-full border-2 shadow-xl hover:-translate-y-1 duration-300 rounded-lg">
-            <a (click)="openModal(project.image)" class="cursor-pointer">
-              <img class="h-[200px] w-full hover:brightness-50 hover:duration-500" [src]="project.image" alt="image projet">
+            <a (click)="openModal(project.image)" class="cursor-pointer" [ngClass]="{'flex justify-center':project.id==2,}">
+              <img [ngClass]="{'w-[100px]':project.id==2,}" class="h-[200px] w-full hover:brightness-50 hover:duration-500" [src]="project.image" alt="image projet">
             </a>
             <div class="p-2">
               <h2>{{ project.name }}</h2>
-              <p class="text-text-secondary">{{ project.description }}</p>
+              <p class="text-text-secondary text-justify">{{ project.description }}</p>
             </div>
             <div class="w-[250px]">
               <button  class="m-2 flex items-start font-secondary border-2
@@ -29,7 +29,7 @@
     @if (isModalOpen) {
         <div  class=" fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" (click)="closeModal()">
               <div class="m-10 lg:m-80 md:m-20" (click)="$event.stopPropagation()">
-                <img [src]="modalImage" alt="Image en pleine taille" class=" w-auto  h-auto">
+                <img [ngClass]="{'lg:h-[700px]':n==2,'sm:h-[400px]':n==2,'md:h-[400px]':n==2,}" [src]="modalImage" alt="Image en pleine taille" class=" w-auto  h-auto">
               </div>
           </div>
     }
