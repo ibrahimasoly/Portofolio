@@ -72,7 +72,7 @@ export class MyLogementComponent {
     },
     {
       id:2,
-      technologies:"Langage : Python, HTML, CSS, Javascript."
+      technologies:"Langage :Java, Python, HTML, CSS, Javascript."
     },
     {
       id:3,

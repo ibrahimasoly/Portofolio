@@ -9,6 +9,7 @@ import { CabinetMedicalComponent } from './components/cabinet-medical/cabinet-me
 import { IbeComponent } from './components/ibe/ibe.component';
 import { BusTransportComponent } from './components/bus-transport/bus-transport.component';
 import { MyLogementComponent } from './components/my-logement/my-logement.component';
+import { BackEcomComponent } from './components/back-ecom/back-ecom.component';
 
 export const routes: Routes = [
     {path:'acceuil', component:AcceuilComponent, children:[
@@ -21,6 +22,7 @@ export const routes: Routes = [
     {path:'cabinet', component:CabinetMedicalComponent},
     {path:'busTransport', component:BusTransportComponent},
     {path:'myLogoment', component:MyLogementComponent},
+    {path:'ecommerce', component:BackEcomComponent},
     {path:'',pathMatch:'full', redirectTo:'home'}
     
 ];

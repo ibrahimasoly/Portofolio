@@ -40,6 +40,13 @@ export class ProjetComponent{
       description: "My Logement permet aux utilisateurs de consulter le site et de faire des demandes immobilières en tant que clients. Les fournisseurs peuvent également s'inscrire sur la plateforme pour y ajouter les informations concernant leurs logements. L'application intègre des API d'intelligence artificielle (IA) qui vérifient l'authenticité des images fournies par les fournisseurs et confirment la présence du bâtiment à l'adresse indiquée.",
       image: 'assets/images/logement/img1.png',
       lien:'myLogoment'
+    },
+    {
+      id:4,
+      name: 'Backend E-commerce micro-service',
+      description: "Backend e-commerce microservices a été implementer en Java et Spring Boot, utilisant Eureka Discovery, OpenFeign, Kafka, et deux bases de données (MySQL, MongoDB). La communication entre services est à la fois synchrone (REST API) et asynchrone (Kafka), avec une gestion des pannes grâce à Resilience4j.",
+      image: 'assets/images/back_ecom/image9.png',
+      lien:'ecommerce'
     }
   ];
 
